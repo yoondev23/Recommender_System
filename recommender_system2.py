@@ -5,8 +5,8 @@ from sklearn.metrics.pairwise import euclidean_distances
 user_df = pd.read_csv('/workspaces/codespaces-jupyter/data/users.csv')  # 사용자 정보 파일 경로
 ratings_df = pd.read_csv('/workspaces/codespaces-jupyter/data/ratings.csv')  # 아이템 평가 데이터 파일 경로
 
-# 추천 대상 사용자 선택 (예시로 User1을 선택합니다)
-target_user = 'User1'
+# 추천 대상 사용자 선택 (예시로 User1을 입력하여 테스트)
+target_user = int(input())
 
 # 사용자 간의 유클리디안 거리 계산 (사용자 정보 특성으로 계산)
 user_features = user_df[['Age', 'Height', 'Weight', 'UpperBodyStrength', 'LowerBodyStrength']]
