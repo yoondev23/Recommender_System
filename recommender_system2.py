@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.metrics.pairwise import euclidean_distances
 
 # 사용자 정보 데이터 로드
-user_df = pd.read_csv('/workspaces/codespaces-jupyter/data/users.csv')  # 사용자 정보 파일 경로
-ratings_df = pd.read_csv('/workspaces/codespaces-jupyter/data/ratings.csv')  # 아이템 평가 데이터 파일 경로
+user_df = pd.read_csv('/workspaces/Recommender_System/data/users.csv')  # 사용자 정보 파일 경로
+ratings_df = pd.read_csv('/workspaces/Recommender_System/data/ratings.csv')  # 아이템 평가 데이터 파일 경로
 
 # 추천 대상 사용자 선택 (예시로 User1을 입력하여 테스트)
 target_user = input()
